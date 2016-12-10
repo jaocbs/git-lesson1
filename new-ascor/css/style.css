@@ -1,0 +1,113 @@
+@import url(//meyerweb.com/eric/tools/css/reset/reset.css);
+@import url(//necolas.github.io/normalize.css/5.0.0/normalize.css);
+@import url(//fonts.googleapis.com/css?family=Fira+Sans|PT+Serif|Russo+One);
+@import url(grid.css);
+
+html {
+    font-size: 0.625em; /* аналогично можно написать 62.5% 16px - стандартный размер шрифта (по умолчанию)*/
+}
+
+body {
+    margin-top:6rem;
+    background: url(../img/antennaHQ.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+}
+/*МЕНЮ*/
+.menu {
+    position: fixed;
+    top:0;
+    height: 6rem;
+    background:linear-gradient(to top, #e55947, #ef8547);
+    }
+
+.menu-list {
+    padding-top:1rem;
+}
+.menu li {
+    font-size: 3rem;
+    text-align: center;
+    list-style: none;
+    text-shadow: 2px 1px 5px black, 0 0 1em #eade59;
+    /*font-family: 'PT Serif', serif;
+    font-family: 'Fira Sans', sans-serif;*/
+    font-family: 'Russo One', sans-serif;
+
+}
+
+.menu-list > li:hover .sub-menu-1 {
+    display: block;
+}
+
+.menu a { 
+    text-decoration: none;
+    color:papayawhip;
+}
+
+.menu a:hover {
+    color:gainsboro;
+}
+
+.sub-menu-1 {
+    display: none;
+    margin-top:1rem;
+    background: #e55947;
+    color: lavenderblush;
+}
+/*КОНЕЦ МЕНЮ*/
+
+/*ЛОГОТИП И ЦИТАТА*/
+.cite-1 {
+    text-align: justify;
+    font-size: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.logo {
+     text-align: center;
+     font-family: 'PT Serif', serif;
+     font-size: 4rem;
+     text-shadow: 2rem 1rem 5rem rosybrown, 0 0 1em red;
+     color:lavenderblush;
+}
+
+.row div {
+        margin-top: 2rem;
+}
+
+/*КОНЕЦ ЛОГОТИП И ЦИТАТА*/
+
+/*ВЕСЕЛЫЕ КАРТИНКИ*/
+
+.pictures {
+    margin-top: 10rem;
+}
+
+.pictures img {
+    width:15rem;
+    height:15rem;
+    border: solid 2rem cornflowerblue;
+    border-radius: 3rem;
+}
+
+.pictures .row:nth-of-type(even) {
+    margin-top: 10rem;
+}
+
+/*TEXT*/
+
+.text {
+    text-align: justify;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem;
+    margin-top: 10rem;
+    padding: 5rem;
+    background: linear-gradient(to top, #93916b, #bfd2ef);
+    border-radius: 10rem;
+    color:black;
+    font-style: oblique;
+}
+
+
+

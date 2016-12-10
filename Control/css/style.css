@@ -1,0 +1,111 @@
+@import url(font-awesome.min.css);
+@import url(//meyerweb.com/eric/tools/css/reset/reset.css);
+@import url(//necolas.github.io/normalize.css/5.0.0/normalize.css);
+@import url(//fonts.googleapis.com/css?family=Fira+Sans|PT+Serif|Russo+One);
+@import url(grid.css);
+
+html {
+    font-size: 0.625em; /* аналогично можно написать 62.5% 16px - стандартный размер шрифта (по умолчанию)*/
+}
+
+/*NAVIGATION + LOGO*/
+.nav li {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 4rem;
+}
+
+.nav span {
+    text-decoration: none;
+    color:#34AC98;
+    font-size: 1.5rem;
+    font-style:italic;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: justify;
+}
+
+.nav a:hover span {
+    text-decoration: none;
+    color:#EC6635;
+}
+
+.nav a:hover i {
+    text-decoration: none;
+    color:#EC6635;
+    padding-right: 1rem;
+    margin-left:1rem;
+    transition: top 1s ease-out 0.5s;
+    transition: cubic-bezier(0.21, 0.6, 0.01, 0.74) 0.5s;
+}
+
+.nav nav {
+    width: 100%;
+}
+.nav i {
+    padding-right: 2rem;
+    font-size: 2.4rem;
+}
+
+/*END NAVIGATION + LOGO*/
+
+/*SLIDER*/
+.container {
+    width: 100%;
+
+}
+
+.slider {
+    float: left;
+    width: calc(8/10*100%);
+    position: relative;
+    /*margin-left: 36.8%;*/
+    /*background-image: url(../img/slider/slide_tastemakers.jpg);*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 2rem;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 2rem;
+}
+/*END SLIDER*/
+
+/*CONTENT*/
+.content {
+    height: auto;
+}
+
+.content  p , span {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.content img {
+    width:100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.6rem;
+    color:#34AC98;
+}
+.content a:hover {
+    color:#EC6635;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content a:hover img {
+    background-color: #333;
+    opacity: 0.5;
+    }
+
+/*END CONTENT*/

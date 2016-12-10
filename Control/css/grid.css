@@ -1,0 +1,385 @@
+* {
+    box-sizing:border-box;
+}
+
+.row {
+    margin-bottom:  2rem;
+ 
+}
+/*лечим проблему с накладыванием отступов при */
+.row .row {
+     margin-left:  -1rem;
+     margin-right: -1rem;
+
+}
+.row:after {
+    content: ".";
+    clear:both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}    
+
+[class*=col-] {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/*Extra small  SIZE*/
+
+@media only screen and (max-width: 360px) {
+     [class*=col-] {
+        width: 100%;
+}
+}
+/*END EXTRA SMALL SIZE*/
+.row {
+        max-width: auto;
+}
+
+/*XLARGE SIZE*/
+@media only screen and (min-width: 1176px) {
+    body {
+    width: 1080px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 50px 48px 0;
+	line-height: 1;
+	color: #333;
+	background: #FFF;
+    }
+    .nav {
+        float:left;
+        width: calc(2/10*100%);
+    }
+    
+    .logo img {
+    width: 100%;
+    }
+    .col-lg-1 {
+            width: calc(1/10*100%);
+    }
+
+    .col-lg-2 {
+            width: calc(2/10*100%);
+    }
+
+    .col-lg-3 {
+            width: calc(3/10*100%);
+    }
+
+    .col-lg-4 {
+            width: calc(4/10*100%);
+    }
+
+    .col-lg-5 {    
+            width: calc(5/10*100%);
+    }
+
+    .col-lg-6 {
+            width: calc(6/10*100%);
+    }
+
+    .col-lg-7 {    
+            width: calc(7/10*100%);
+    }
+
+    .col-lg-8 {
+            width: calc(8/10*100%);
+    }
+
+    .col-lg-9 {
+            width: calc(9/10*100%);
+    }
+
+    .col-lg-10 {
+            width: calc(10/10*100%);
+    }
+
+    .offset-lg-1 {
+        margin-left: calc(1/10*100%);
+    }
+
+    .offset-lg-2 {
+        margin-left: calc(2/10*100%);
+    }
+
+    .offset-lg-3 {
+        margin-left: calc(3/10*100%);
+    }
+
+    .offset-lg-4 {
+        margin-left: calc(4/10*100%);
+    }
+
+    .offset-lg-5 {
+        margin-left: calc(5/10*100%);
+    }
+
+    .offset-lg-6 {
+        margin-left: calc(6/10*100%);
+    }
+
+    .offset-lg-7 {
+        margin-left: calc(7/10*100%);
+    }
+
+    .offset-lg-8 {
+        margin-left: calc(8/10*100%);
+    }
+
+    .offset-lg-9 {
+        margin-left: calc(9/10*100%);
+    }
+
+    .offset-lg-10 {
+        margin-left: calc(10/10*100%);
+    }
+
+}
+/*END MEDIA XLARGE SIZE*/
+
+/*LARGE SIZE*/
+@media only screen and (min-width:992px) and (max-width:1176px) {
+    body {
+    width: 992px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-top: 5rem;
+	line-height: 1;
+	color: #333;
+	background: #FFF;
+    }
+
+    .nav {
+            float:left;
+            width: calc(2/10*100%);
+    }
+    
+    .logo img {
+    width: 100%;
+    }
+    .col-lg-1 {
+            width: calc(1/10*100%);
+    }
+
+    .col-lg-2 {
+            width: calc(2/10*100%);
+    }
+
+    .col-lg-3 {
+            width: calc(3/10*100%);
+    }
+
+    .col-lg-4 {
+            width: calc(4/10*100%);
+    }
+
+    .col-lg-5 {    
+            width: calc(5/10*100%);
+    }
+
+    .col-lg-6 {
+            width: calc(6/10*100%);
+    }
+
+    .col-lg-7 {    
+            width: calc(7/10*100%);
+    }
+
+    .col-lg-8 {
+            width: calc(8/10*100%);
+    }
+
+    .col-lg-9 {
+            width: calc(9/10*100%);
+    }
+
+    .col-lg-10 {
+            width: calc(10/10*100%);
+    }
+
+    .offset-lg-1 {
+        margin-left: calc(1/10*100%);
+    }
+
+    .offset-lg-2 {
+        margin-left: calc(2/10*100%);
+    }
+
+    .offset-lg-3 {
+        margin-left: calc(3/10*100%);
+    }
+
+    .offset-lg-4 {
+        margin-left: calc(4/10*100%);
+    }
+
+    .offset-lg-5 {
+        margin-left: calc(5/10*100%);
+    }
+
+    .offset-lg-6 {
+        margin-left: calc(6/10*100%);
+    }
+
+    .offset-lg-7 {
+        margin-left: calc(7/10*100%);
+    }
+
+    .offset-lg-8 {
+        margin-left: calc(8/10*100%);
+    }
+
+    .offset-lg-9 {
+        margin-left: calc(9/10*100%);
+    }
+
+    .offset-lg-10 {
+        margin-left: calc(10/10*100%);
+    }
+}
+/*END MEDIA LARGE SIZE*/
+
+
+/*MEDIUM MEDIA SIZE*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) { 
+    body {
+    width: 768px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	line-height: 1;
+	color: #333;
+	background: #FFF;
+    }
+    .nav {
+            float:left;
+            width: calc(2/10*100%);
+    }
+
+    .logo img {
+    width: 100%;
+    }
+   .col-lg-1 {
+            width: calc(1/10*100%);
+    }
+
+    .col-lg-2 {
+            width: calc(2/10*100%);
+    }
+
+    .col-lg-3 {
+            width: calc(3/10*100%);
+    }
+
+    .col-lg-4 {
+            width: calc(4/10*100%);
+    }
+
+    .col-lg-5 {    
+            width: calc(5/10*100%);
+    }
+
+    .col-lg-6 {
+            width: calc(6/10*100%);
+    }
+
+    .col-lg-7 {    
+            width: calc(7/10*100%);
+    }
+
+    .col-lg-8 {
+            width: calc(8/10*100%);
+    }
+
+    .col-lg-9 {
+            width: calc(9/10*100%);
+    }
+
+    .col-lg-10 {
+            width: calc(10/10*100%);
+    }
+
+    .offset-lg-1 {
+        margin-left: calc(1/10*100%);
+    }
+
+    .offset-lg-2 {
+        margin-left: calc(2/10*100%);
+    }
+
+    .offset-lg-3 {
+        margin-left: calc(3/10*100%);
+    }
+
+    .offset-lg-4 {
+        margin-left: calc(4/10*100%);
+    }
+
+    .offset-lg-5 {
+        margin-left: calc(5/10*100%);
+    }
+
+    .offset-lg-6 {
+        margin-left: calc(6/10*100%);
+    }
+
+    .offset-lg-7 {
+        margin-left: calc(7/10*100%);
+    }
+
+    .offset-lg-8 {
+        margin-left: calc(8/10*100%);
+    }
+
+    .offset-lg-9 {
+        margin-left: calc(9/10*100%);
+    }
+
+    .offset-lg-10 {
+        margin-left: calc(10/10*100%);
+    }
+    
+}
+/*END MEDIUM MEDIA SIZE*/
+
+/*SMALL SIZE*/
+@media only screen and (min-width: 480px) and (max-width:767px) {
+    [class*=col-] {
+        width: 49%;
+    }
+    .nav {
+            float:left;
+            width: 100%;
+    }
+    .nav img {
+        display: inline;
+        width: 20%;
+    }
+    .nav li {
+        display: inline;
+    }
+
+    .nav i {
+        display: block;
+    }
+   body {
+    width: 480px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	line-height: 1;
+	color: #333;
+	background: #FFF;
+    }
+}
+/*END SMALL SIZE*/
+
