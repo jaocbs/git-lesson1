@@ -1,4 +1,4 @@
-'use strict'
+//'use strict'
 //функция - это подпрограмма. Все функции это объекты
 
 /*
@@ -19,7 +19,7 @@ function printName(name) {
     console.log('привет ' + name);
 }
 
-printName('Василий');
+//printName('Василий');
 
 
 function sum(a, b) {
@@ -90,4 +90,64 @@ function calc (a,b,oper) {
 }
 
 calc (10 ,2, '*');
+
+
+//повоторяем. Это все называется именовонные функции
+function makeText(text) {
+    text = text ||'gono' ;
+    for (var i = 0; i < arguments.length; i++ ) {
+     console.log(arguments[i]) ;
+    }
+   // console.log(text);
+}
+makeText('text','newText');
+
+console.log('функции')
+console.log('именовонные функции FunctionDeclaration')// именованые функции находится в любом месте программы и обращаться к ним можно тоже в любом месте программы!!
+console.log('анонимные функции FunctionExpression')//можно вызвать только после ее создания
+
+var checkEvenRes = function(number) {
+    if (number%2 == 0) {
+        console.log('число четное')
+    }
+}
+
+console.log(checkEvenRes(9));
+
+//Существует еще рекрсиваная функция, она вызывает сама себя
+//попробуем рассчитать факториал n
+
+function factorial(n) {
+    return n != 1 ? n * factorial(n-1) : 1;   
+}
+console.log(factorial(170));
+
+function makeText() {
+    var y = 'txt';
+}
+//console.log (y); // в данном случае переменная создана области видимости функции и просто так ее нельзя вывести
+
+var x = 6; // это глобальная переменная, она живет всегда
+function makeText() {
+    var y = 'txt';
+    return x = x + 7;
+}
+console.log (x); 
+console.log (x = makeText()); // можно вот так вот поссчитать
+console.log (makeText());// получается 20. он складываться
+
+var name = 'name'
+function printName () {
+    this.name = 'new name'; //this определяет свойство объекта функции. То есть написав this.name мы меняем переменную только в области функции
+    //'use strict' не работает в этой функцией. 
+    console.log(this.name);  //контекст функции. Способ присвоения 
+}
+
+var q = 6;
+function showName(q) {
+    function u(q) {   //вложенная функция. Использует как свои переменные так и родительские.
+        console.log('q');
+    } 
+}
+console.log(showName());
 
