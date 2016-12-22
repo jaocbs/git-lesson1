@@ -1,0 +1,7 @@
+.hideElem {
+	display: none;
+}
+
+.focusElem {
+	background: green;
+}

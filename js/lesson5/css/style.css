@@ -1,0 +1,38 @@
+.findMebyClassName 
+{
+	position: relative;
+	height: 200px;
+	width: 400px;
+}
+
+
+.list
+{
+	position: relative;
+	height: 70px;
+	width: 400px;
+	border: 2px solid gray;
+	margin-top: 10px; 
+}
+
+
+ul 
+{
+    float: left;
+}
+
+
+.img 
+{
+	height: 200px;
+	width: 400px;
+}
+
+
+.btnStyle
+{
+	height: 20px;
+	width: 100px;
+	margin-bottom: 7px; 	
+}
+
